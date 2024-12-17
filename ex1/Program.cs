@@ -23,9 +23,11 @@ else if (stat == "fr")
 }
 else if (stat == "tr")
 {
-    Console.WriteLine($"marhaba "+Name);
+    Console.WriteLine($"marhaba   "+Name);
 
 }
+
+
 
 
 Console.WriteLine("----------------------");
