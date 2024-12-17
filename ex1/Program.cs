@@ -1,5 +1,7 @@
 ﻿
-Console.WriteLine("enter your values");
+Console.WriteLine("enter your name");
+string Name= Console.ReadLine();
+
 
 Console.WriteLine("enter the chr (en,es,fr,tr):");
  string stat = Console.ReadLine();
@@ -7,21 +9,21 @@ Console.WriteLine("enter the chr (en,es,fr,tr):");
 
 if(stat=="en")
 {
-    Console.WriteLine("Hello Name");
+    Console.WriteLine("Hello "+Name);
 }
 else if (stat=="es")
 {
-    Console.WriteLine("Hola Name");
+    Console.WriteLine($"Hola"+Name);
 
 }
 else if (stat == "fr")
 {
-    Console.WriteLine("bonjour Name");
+    Console.WriteLine($"bonjour "+Name);
 
 }
 else if (stat == "tr")
 {
-    Console.WriteLine("marhaba Name");
+    Console.WriteLine($"marhaba "+Name);
 
 }
 
@@ -52,21 +54,21 @@ Console.WriteLine("----------------------");
 Console.WriteLine("enter your gread: ");
  int mark=Convert.ToInt32( Console.ReadLine());
 
-if (mark>=80)
+if (mark>=80 )
 {
     Console.WriteLine("A");
 }
-else if (mark>=70)
+else if (mark>=70 && mark <80)
 {
     Console.WriteLine("B");
 }
 
-else if (mark>=60)
+else if (mark>=60 && mark <70)
 {
     Console.WriteLine("c");
 }
 
-else if (mark >= 50)
+else if (mark >= 50 && mark <60)
 {
     Console.WriteLine("D");
 }
